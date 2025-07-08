@@ -2,6 +2,8 @@ import 'package:demo/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:google_fonts/google_fonts.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -53,9 +55,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
               Text(
                 'U.A.F.I.C',
-                style: TextStyle(
-                  fontSize: 48,
-                  fontWeight: FontWeight.bold,
+                style: GoogleFonts.montserrat(
+                  fontSize: 28,
+                  fontWeight: FontWeight.w600,
                   color: Colors.white,
                 ),
               ),
