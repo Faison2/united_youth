@@ -25,24 +25,46 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF4B0082), // Same purple as your home page
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Hello',
-              style: TextStyle(
-                fontSize: 48,
-                fontWeight: FontWeight.bold,
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFFBDCDCF), // #034C36
+              Color(0xFF034C36), // #034C36
+            ],
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(50.0),
+                child: Image.asset(
+                  'assets/logo.jpeg',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              Text(
+                'U.A.F.I.C',
+                style: TextStyle(
+                  fontSize: 48,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 20),
+              CircularProgressIndicator(
                 color: Colors.white,
               ),
-            ),
-            const SizedBox(height: 20),
-            CircularProgressIndicator(
-              color: Colors.purpleAccent,
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
