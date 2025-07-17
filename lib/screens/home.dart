@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'branchs.dart';
+import 'calender.dart';
+import 'event.dart';
+import 'hymnbook.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -99,10 +104,10 @@ class HomePage extends StatelessWidget {
                     crossAxisSpacing: 16,
                     padding: const EdgeInsets.all(8.0),
                     children: [
-                      _buildButton(Icons.add, "Add Soul"),
-                      _buildButton(Icons.remove_red_eye, "View Souls"),
-                      _buildButton(Icons.sync, "Sync Data"),
-                      _buildButton(Icons.dashboard, "Summarize"),
+                      _buildButton(context, Icons.book, "Hymn Book", const HymnBookPage()),
+                      _buildButton(context, Icons.calendar_today, "Our Calendar", const CalendarPage()),
+                      _buildButton(context, Icons.account_tree, "Branches", const BranchesPage()),
+                      _buildButton(context, Icons.event, "Upcoming Event", const EventsPage()),
                     ],
                   ),
                 ),
@@ -114,11 +119,16 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildButton(IconData icon, String label) {
+  Widget _buildButton(BuildContext context, IconData icon, String label, Widget destination) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => destination),
+        );
+      },
       style: ElevatedButton.styleFrom(
-        backgroundColor: const Color(0xFF034C36), //
+        backgroundColor: const Color(0xFF034C36),
         shape: const CircleBorder(),
         padding: const EdgeInsets.all(24),
         elevation: 4,

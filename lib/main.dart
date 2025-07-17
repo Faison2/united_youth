@@ -9,7 +9,7 @@ class BeitbridgeCrusadeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Beitbridge Crusade',
+      title: 'United',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.purple),
       home: const SplashScreen(),
