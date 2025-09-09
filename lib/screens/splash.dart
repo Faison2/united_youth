@@ -56,14 +56,19 @@ class _SplashScreenState extends State<SplashScreen> {
                 'U.A.F.I.C',
                 style: GoogleFonts.montserrat(
                   fontSize: 28,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),
               ),
               const SizedBox(height: 20),
+              // CircularProgressIndicator(
+              //   color: Colors.white,
+              // ),
               CircularProgressIndicator(
-                color: Colors.white,
-              ),
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                backgroundColor: Colors.red.withOpacity(0.3),
+              )
+
             ],
           ),
         ),

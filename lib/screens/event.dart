@@ -316,7 +316,7 @@ class EventsPage extends StatelessWidget {
   Color _getCategoryColor(String category) {
     switch (category) {
       case 'Youth':
-        return Colors.orange;
+        return Colors.green;
       case 'Worship':
         return Colors.purple;
       case 'Prayer':
