@@ -5,8 +5,8 @@ class EventsPage extends StatelessWidget {
 
   final List<Map<String, dynamic>> events = const [
     {
-      'name': 'Youth Conference 2025',
-      'date': '14-16 December 2025',
+      'name': 'Youth Conference 2026',
+      'date': '15-17 December 2025',
       'time': '9:00 AM - 6:00 PM',
       'location': 'To Be Announced',
       'description': 'Annual youth conference focused on spiritual growth, leadership development, and fellowship among young believers.',
@@ -15,13 +15,13 @@ class EventsPage extends StatelessWidget {
       'fee': 'USD 5',
       'capacity': '800 participants',
       'registrationDeadline': '10 December 2025',
-      'image': Icons.groups,
+      'image': Icons.wb_sunny,
       'category': 'Youth',
       'status': 'upcoming',
     },
     {
-      'name': 'Christmas Service',
-      'date': '25 December 2025',
+      'name': 'Get Together',
+      'date': '2 February 2026',
       'time': '8:00 AM - 11:00 AM',
       'location': 'All Branches',
       'description': 'Special Christmas morning service celebrating the birth of Jesus Christ with carols, special music, and fellowship.',
@@ -30,13 +30,13 @@ class EventsPage extends StatelessWidget {
       'fee': 'Free',
       'capacity': 'Open to all',
       'registrationDeadline': 'No registration required',
-      'image': Icons.church,
+      'image': Icons.wb_sunny,
       'category': 'Worship',
       'status': 'upcoming',
     },
     {
-      'name': 'New Year Prayer Service',
-      'date': '1 January 2026',
+      'name': 'Wealth Creation Seminar',
+      'date': '18 January 2026',
       'time': '6:00 AM - 8:00 AM',
       'location': 'All Branches',
       'description': 'Welcome the new year with prayer, worship, and dedication to God. A time of reflection and commitment.',
@@ -45,7 +45,7 @@ class EventsPage extends StatelessWidget {
       'fee': 'Free',
       'capacity': 'Open to all',
       'registrationDeadline': 'No registration required',
-      'image': Icons.schedule,
+      'image': Icons.wb_sunny,
       'category': 'Prayer',
       'status': 'upcoming',
     },
@@ -60,7 +60,7 @@ class EventsPage extends StatelessWidget {
       'fee': 'USD 40 per couple',
       'capacity': '50 couples',
       'registrationDeadline': '10 February 2026',
-      'image': Icons.favorite,
+      'image': Icons.wb_sunny,
       'category': 'Family',
       'status': 'upcoming',
     },
@@ -90,7 +90,7 @@ class EventsPage extends StatelessWidget {
       'fee': 'USD 35',
       'capacity': '80 participants',
       'registrationDeadline': '5 May 2026',
-      'image': Icons.psychology,
+      'image': Icons.wb_sunny,
       'category': 'Training',
       'status': 'upcoming',
     },
@@ -318,11 +318,11 @@ class EventsPage extends StatelessWidget {
       case 'Youth':
         return Colors.green;
       case 'Worship':
-        return Colors.purple;
+        return Colors.green;
       case 'Prayer':
-        return Colors.blue;
+        return Colors.green;
       case 'Family':
-        return Colors.pink;
+        return Colors.green;
       case 'Training':
         return Colors.green;
       default:
