@@ -196,12 +196,8 @@ class BranchesPage extends StatelessWidget {
                   color: Colors.white.withOpacity(0.9),
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    _buildStatCard('Total Branches', '${branches.length}'),
-                    _buildStatCard('Total Members', '${branches.fold(0, (sum, branch) => sum + (branch['members'] as int))}'),
-                  ],
+                child: Center(
+                  child: _buildStatCard('Total Branches', '${branches.length}'),
                 ),
               ),
 
@@ -251,8 +247,6 @@ class BranchesPage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 _buildInfoRow(Icons.person, 'Pastor', branch['pastor']),
-                                const SizedBox(height: 8),
-                                _buildInfoRow(Icons.group, 'Members', '${branch['members']} members'),
                                 const SizedBox(height: 8),
                                 _buildInfoRow(Icons.calendar_today, 'Established', branch['established']),
                                 const SizedBox(height: 8),
@@ -349,8 +343,6 @@ class BranchesPage extends StatelessWidget {
               _buildInfoRow(Icons.location_on, 'Location', branch['location']),
               const SizedBox(height: 8),
               _buildInfoRow(Icons.phone, 'Phone', branch['phone']),
-              const SizedBox(height: 8),
-              _buildInfoRow(Icons.group, 'Members', '${branch['members']} members'),
             ],
           ),
           actions: [
