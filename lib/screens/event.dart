@@ -6,13 +6,13 @@ class EventsPage extends StatelessWidget {
   final List<Map<String, dynamic>> events = const [
     {
       'name': 'Youth Conference 2026',
-      'date': '15-17 December 2025',
+      'date': '15-17 December 2026',
       'time': '9:00 AM - 6:00 PM',
-      'location': 'To Be Announced',
+      'location': 'Chakonda',
       'description': 'Annual youth conference focused on spiritual growth, leadership development, and fellowship among young believers.',
       'organizer': 'Youth Ministry',
       'contact': 'Zulu +263 78 763 0761',
-      'fee': 'USD 5',
+      'fee': 'USD 3',
       'capacity': '800 participants',
       'registrationDeadline': '10 December 2025',
       'image': Icons.wb_sunny,
